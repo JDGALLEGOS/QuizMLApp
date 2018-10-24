@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="linearLayout_marginTop">10dp</dimen>
+    <dimen name="linearLayout_marginLeft">5dp</dimen>
+    <dimen name="linearLayout_marginRight">5dp</dimen>
+    <dimen name="header_textSize">15sp</dimen>
+    <dimen name="layout_marginTop">5dp</dimen>
+    <dimen name="layout_marginRight">10dp</dimen>
+</resources>

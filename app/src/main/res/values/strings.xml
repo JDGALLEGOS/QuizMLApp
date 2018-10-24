@@ -1,0 +1,44 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Name of the Application.[CHAR LIMIT =NONE]-->
+    <string name="app_name">Quiz ML App</string>
+    <!-- Hint of the EditText. [CHAR LIMIT =NONE]-->
+    <string name="name_edit_text">Name</string>
+
+    <!-- Name for quiz result. It will be shown in the format of "Name = Daniel" where Daniel is
+      the user's name. [CHAR LIMIT =NONE]-->
+    <string name="quiz_summary_name">Name = <xliff:g id="name" example="Daniel">%s</xliff:g> </string>
+
+    <!-- Question 1 A field of artificial intelligence that uses statistical
+    techniques to give computer systems the ability to "learn" from data, without
+    being explicitly programmed. . [CHAR LIMIT =NONE]-->
+    <string name="question1_text">A field of artificial intelligence that uses statistical techniques to give computer systems the ability to "learn" from data, without being explicitly programmed: </string>
+
+    <!-- Question 2 Select all of the true statements: . [CHAR LIMIT =NONE]-->
+    <string name="question2_text">Select all of the true statements: </string>
+    <!-- answer 2 editText[CHAR LIMIT =NONE]-->
+    <string name="answer_edit_text">Answer </string>
+
+    <!-- Question 3 A model that predicts spam / not-spam is a: . [CHAR LIMIT =NONE]-->
+    <string name="question3_text">A model that predicts spam / not-spam is a: </string>
+
+    <!-- answer is not graded. [CHAR LIMIT =NONE]-->
+    <string name="no_graded_text">"0/1 Point (no graded)"</string>
+
+    <!-- The answer is Regression Model. [CHAR LIMIT =NONE]-->
+    <string name="regression_model">Regression Model</string>
+    <!-- The answer is Classification Model. [CHAR LIMIT =NONE]-->
+    <string name="classification_model">Classification Model</string>
+    <!-- The answer is Clustering Model. [CHAR LIMIT =NONE]-->
+    <string name="clustering_model">Clustering Model</string>
+
+    <!-- Question 4 Which of the following models has the most direct probabilistic interpretation?  . [CHAR LIMIT =NONE]-->
+    <string name="question4_text">Which of the following models has the most direct probabilistic interpretation?  </string>
+
+    <!-- The answer is Logistic Regression. [CHAR LIMIT =NONE]-->
+    <string name="logistic_regression">Logistic Regression</string>
+    <!-- The answer is K-means. [CHAR LIMIT =NONE]-->
+    <string name="k_means">K-means</string>
+    <!-- The answer is Linear Regression. [CHAR LIMIT =NONE]-->
+    <string name="linear_regression">Linear Regression</string>
+
+</resources>

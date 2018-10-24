@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name_edit_text"
+                android:inputType="textCapWords" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/linearLayout_marginLeft"
+                android:layout_marginTop="@dimen/linearLayout_marginTop"
+                android:layout_marginRight="@dimen/linearLayout_marginRight"
+                android:background="@drawable/customborder"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/customText"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:text="@string/question1_text" />
+
+                <TextView
+                    android:id="@+id/graded_text_question_one"
+                    style="@style/gradedText"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:text="@string/no_graded_text"
+                    />
+
+                <EditText
+                    android:id="@+id/answer_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:hint="@string/answer_edit_text"
+                    android:inputType="textCapWords" />
+
+                <Button
+                    android:id="@+id/submit_question1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:onClick="submitQuestionOne"
+                    android:text="Submit" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/linearLayout_marginLeft"
+                android:layout_marginTop="@dimen/linearLayout_marginTop"
+                android:layout_marginRight="@dimen/linearLayout_marginRight"
+                android:background="@drawable/customborder"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/customText"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:text="@string/question2_text" />
+
+                <TextView
+                    android:id="@+id/graded_text_question_two"
+                    style="@style/gradedText"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:text="@string/no_graded_text" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/supervised_model_unlabeled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:text="Supervised models are trained on unlabeled data" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/supervised_model_labeled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:text="Supervised models are trained on labeled data" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/unsupervised_model_unlabeled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:text=" Unsupervised models are trained on unlabeled data" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/unsupervised_model_labeled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:text="Unsupervised models are trained on labeled data" />
+
+                <Button
+                    android:id="@+id/submit_question2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:onClick="submitQuestionTwo"
+                    android:text="Submit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/linearLayout_marginLeft"
+                android:layout_marginTop="@dimen/linearLayout_marginTop"
+                android:layout_marginRight="@dimen/linearLayout_marginRight"
+                android:background="@drawable/customborder"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/customText"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:text="@string/question3_text" />
+
+                <TextView
+                    android:id="@+id/graded_text_question_three"
+                    style="@style/gradedText"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:text="@string/no_graded_text" />
+
+                <RadioGroup
+                    android:id="@+id/rdgGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/regression_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/regression_model"
+                        android:textAppearance="?android:textAppearance" />
+
+                    <RadioButton
+                        android:id="@+id/classification_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/classification_model"
+                        android:textAppearance="?android:textAppearance" />
+
+                    <RadioButton
+                        android:id="@+id/clustering_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/clustering_model"
+                        android:textAppearance="?android:textAppearance" />
+                </RadioGroup>
+
+
+                <Button
+                    android:id="@+id/submit_question3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:onClick="submitQuestionThree"
+                    android:text="Submit" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/linearLayout_marginLeft"
+                android:layout_marginTop="@dimen/linearLayout_marginTop"
+                android:layout_marginRight="@dimen/linearLayout_marginRight"
+                android:background="@drawable/customborder"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/customText"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:text="@string/question4_text" />
+
+                <TextView
+                    android:id="@+id/graded_text_question_four"
+                    style="@style/gradedText"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:text="@string/no_graded_text" />
+
+                <RadioGroup
+                    android:id="@+id/rdgGroup2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/logistic_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/logistic_regression"
+                        android:textAppearance="?android:textAppearance" />
+
+                    <RadioButton
+                        android:id="@+id/kmeans_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/k_means"
+                        android:textAppearance="?android:textAppearance" />
+
+                    <RadioButton
+                        android:id="@+id/linear_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/linear_regression"
+                        android:textAppearance="?android:textAppearance" />
+                </RadioGroup>
+
+
+                <Button
+                    android:id="@+id/submit_question4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:onClick="submitQuestionFour"
+                    android:text="Submit" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/send_results"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:layout_marginRight="@dimen/layout_marginRight"
+                    android:onClick="sendResults"
+                    android:text="Send" />
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/send_results"
+                    android:layout_marginTop="@dimen/layout_marginTop"
+                    android:onClick="resetTest"
+                    android:text="Try Again" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </TableLayout>
+</ScrollView>
